@@ -16,7 +16,7 @@ export default function Home() {
                 Revitalizing Earth Together
               </div>
               <div className="mt-4 text-2xl leading-7 text-gray-200 max-md:max-w-full">
-                Empower nature's climate warriors.
+                Empower nature&apos;s climate warriors.
               </div>
               <Link href="/">
                 <Button className="mt-4 dark:bg-green-200 bg-lime-500 text-amber-100 dark:text-green-800 dark:hover:bg-green-700 dark:hover:text-green-200 hover:bg-amber-100 hover:text-lime-500">
@@ -44,7 +44,7 @@ export default function Home() {
             capture, fostering a healthier planet.
           </div>
         </div>
-        <div className="grid w-full dark:bg-green-200 place-content-center bg-green-500/30">
+        <div className="grid w-full dark:bg-green-200 place-content-center bg-green-500">
           <div className="mt-12 text-3xl sm:text-2xl md:text-3xl text-center mb-12 text-emerald-50 dark:text-emerald-800 ">
             Our Approach
           </div>
@@ -56,7 +56,7 @@ export default function Home() {
               <h1 className="text-emerald-50 text-3xl my-2 dark:text-emerald-900">
                 Algae Development
               </h1>
-              <div className="mt-2 text-sm leading-5 text-emerald-600 text-ellipsis">
+              <div className="mt-2 text-sm md:text-lg leading-5 dark:text-emerald-600 text-green-200 text-ellipsis">
                 Implementing strategic algae cultivation to maximize carbon absorption and
                 storage.
               </div>
@@ -68,7 +68,7 @@ export default function Home() {
               <h1 className="text-emerald-50 text-3xl my-2 dark:text-emerald-900">
                 Token Rewards
               </h1>
-              <div className="mt-2 text-sm leading-5 text-emerald-600 text-ellipsis">
+              <div className="mt-2 text-sm leading-5 md:text-lg dark:text-emerald-600 text-green-200  text-ellipsis">
                 Earn tokens for your contributions to our carbon sequestration efforts
                 through algae.
               </div>
@@ -80,8 +80,8 @@ export default function Home() {
               <h1 className="text-emerald-50 text-3xl my-2 dark:text-emerald-900">
                 Data Transparency
               </h1>
-              <div className="mt-2 text-sm leading-5 text-emerald-600 text-ellipsis">
-                Ensuring transparent verification of our ecosystem's data integrity and
+              <div className="mt-2 text-sm leading-5 md:text-lg dark:text-emerald-600 text-green-200  text-ellipsis">
+                Ensuring transparent verification of our ecosystem&apos;s data integrity and
                 progress.
               </div>
             </div>
