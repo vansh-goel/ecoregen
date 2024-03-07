@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className)}>
+      <body className={cn(inter.className, "dark:bg-gradient-to-r", "dark:from-emerald-900", "dark:to-green-700", "bg-gradient-to-br", "from-green-400", "to-lime-400")}>
         <ThemeProvider
             attribute="class"
             defaultTheme="system"

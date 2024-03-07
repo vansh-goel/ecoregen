@@ -36,7 +36,7 @@ function Navbar() {
           <Image src="/ecoregen.png" alt="EcoReGen Alliance" width="70" height="70" className="hidden sm:block" />
         </NavigationMenuItem>
         <NavigationMenuItem>
-            <h1 className="mx-4 font-custom font-bold text-lg">
+            <h1 className="mx-4 font-custom text-center font-bold text-lg">
                 EcoRegen Alliance
             </h1>
         </NavigationMenuItem>
