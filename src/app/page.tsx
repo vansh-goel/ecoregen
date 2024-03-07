@@ -49,7 +49,7 @@ export default function Home() {
             Our Approach
           </div>
           <div className="grid grid-flow-row md:grid-flow-col gap-4 content-center px-12 py-8">
-            <div className="grid grid-flow-row place-content-center w-full">
+            <div className="">
               <div className="grid aspect-square rounded-[50px] w-[40px] place-content-center bg-emerald-900 text-emerald-50">
                 1
               </div>
