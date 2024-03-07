@@ -30,14 +30,14 @@ function Navbar() {
     const { setTheme } = useTheme()
   return (
     <>
-      <div className="place-self-center flex flex-col sm:flex-row justify-between sticky top-3 px-4">
+      <div className="place-self-center flex flex-col sm:flex-row justify-between sticky top-3 z-30 px-4">
       <NavigationMenu className="h-fit w-fit self-center bg-black/10 dark:bg-white/10 px-4 py-2 rounded-lg backdrop-blur-lg">
         <NavigationMenuList>
           <NavigationMenuItem>
             <Image src="/ecoregen.png" alt="EcoReGen Alliance" width="70" height="70" className="hidden sm:block" />
           </NavigationMenuItem>
           <NavigationMenuItem>
-              <h1 className="mx-4 font-custom text-center font-bold text-lg">
+              <h1 className="mx-4 font-custom text-center font-bold text-lg z-10">
                   EcoRegen Alliance
               </h1>
           </NavigationMenuItem>
@@ -85,15 +85,15 @@ function Navbar() {
           </DropdownMenu>
       </div>
       </div>
-      <div className="place-content-center grid grid-flow-col my-4 pt-2 sm:hidden">
+      <div className="place-content-center grid grid-flow-col my-4 pt-2 sm:hidden -z-10">
         <NavigationMenu className="px-4">
-            <NavigationMenuList className="">
+            <NavigationMenuList className="-z-1000">
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>
                         Auth
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <div className="grid m-4 place-content-center z-10">
+                        <div className="grid m-4 place-content-center">
                             <Button className="mb-2">
                                 <RegisterLink>Sign up</RegisterLink>
                             </Button>
