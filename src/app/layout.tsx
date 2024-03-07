@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, "h-[100vh]", "w-[100vw]", "overflow-x-hidden")}>
+      <body className={cn(inter.className)}>
         <ThemeProvider
             attribute="class"
             defaultTheme="system"

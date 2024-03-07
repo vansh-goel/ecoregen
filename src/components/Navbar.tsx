@@ -23,29 +23,45 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
+
 
 function Navbar() {
     const { setTheme } = useTheme()
   return (
-    <div className="h-12 py-10 flex justify-between">
-    <NavigationMenu className="h-fit w-fit self-center">
+    <div className="place-self-center flex flex-col sm:flex-row justify-between sticky top-3 px-4">
+    <NavigationMenu className="h-fit w-fit self-center bg-black/10 dark:bg-white/10 px-4 py-2 rounded-lg backdrop-blur-lg">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Image src="/ecoregen.png" alt="EcoReGen Alliance" width="70" height="70" />
+          <Image src="/ecoregen.png" alt="EcoReGen Alliance" width="70" height="70" className="hidden sm:block" />
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
-            </NavigationMenuLink>
-          </Link>
+            <h1 className="mx-4 font-custom font-bold text-lg">
+                EcoRegen Alliance
+            </h1>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-    <div className="h-fit w-fit self-center px-4">
+    <div className="place-content-center grid grid-flow-col my-4">
+        <NavigationMenu className="px-4">
+            <NavigationMenuList className="">
+                <NavigationMenuItem>
+                    <NavigationMenuTrigger>
+                        Auth
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                        <div className="grid m-4 place-content-center z-10">
+                            <Button className="mb-2">
+                                <RegisterLink>Sign up</RegisterLink>
+                            </Button>
+                            <Button>
+                                <LoginLink>Login</LoginLink>
+                            </Button>
+                        </div>
+                    </NavigationMenuContent>
+                </NavigationMenuItem>
+            </NavigationMenuList>
+        </NavigationMenu>
         <DropdownMenu>
         <DropdownMenuTrigger asChild>
             <Button variant="outline" size="icon">
